@@ -13,6 +13,7 @@ namespace TeamServer.Controllers
         public ClientAuthenticationResult ClientLogin(ClientAuthenticationRequest request)
         {
             var result = new ClientAuthenticationResult();
+
             if (string.IsNullOrEmpty(request.Nick) || string.IsNullOrEmpty(request.Password))
             {
                 result.Result = ClientAuthenticationResult.AuthResult.InvalidRequest;
@@ -28,9 +29,13 @@ namespace TeamServer.Controllers
             else
             {
                 result.Result = ClientAuthenticationResult.AuthResult.LoginSuccess;
+                result.Token = AuthenticationController.GenerateAuthenticationToken(request.Nick);
+
+
             }
             return result;
         }
 
+     
     }
 }
