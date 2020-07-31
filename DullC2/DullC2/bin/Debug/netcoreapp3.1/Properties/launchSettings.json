@@ -19,6 +19,7 @@
     },
     "DullC2": {
       "commandName": "Project",
+      "commandLineArgs": "a",
       "launchBrowser": true,
       "launchUrl": "swagger/index.html",
       "environmentVariables": {

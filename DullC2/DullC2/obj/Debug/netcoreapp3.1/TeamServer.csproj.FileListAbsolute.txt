@@ -7,7 +7,6 @@ C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\TeamServer.runtimeconfig
 C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\TeamServer.runtimeconfig.dev.json
 C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\TeamServer.dll
 C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\TeamServer.pdb
-C:\Hacking\DullC2\DullC2\DullC2\obj\Debug\netcoreapp3.1\TeamServer.csprojAssemblyReference.cache
 C:\Hacking\DullC2\DullC2\DullC2\obj\Debug\netcoreapp3.1\TeamServer.AssemblyInfoInputs.cache
 C:\Hacking\DullC2\DullC2\DullC2\obj\Debug\netcoreapp3.1\TeamServer.AssemblyInfo.cs
 C:\Hacking\DullC2\DullC2\DullC2\obj\Debug\netcoreapp3.1\TeamServer.RazorTargetAssemblyInfo.cache
@@ -41,3 +40,4 @@ C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.
 C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Hacking\DullC2\DullC2\DullC2\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Hacking\DullC2\DullC2\DullC2\obj\Debug\netcoreapp3.1\TeamServer.csprojAssemblyReference.cache

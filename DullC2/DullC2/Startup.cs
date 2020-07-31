@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Serialization;
 using NSwag.Generation.Processors.Security;
 using TeamServer.Controllers;
 
@@ -32,7 +34,11 @@ namespace DullC2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(j =>
+            {
+                j.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                j.SerializerSettings.Converters.Add(new StringEnumConverter());
+            });
 
             services.AddSwaggerDocument(c =>
             {

@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "TeamServer.Tests": {
+      "commandName": "Project"
+    }
+  }
+}

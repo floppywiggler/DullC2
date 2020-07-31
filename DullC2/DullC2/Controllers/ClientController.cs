@@ -8,9 +8,9 @@ namespace TeamServer.Controllers
 {
     public class ClientController
     {
-       private List<string> _connectedClients { get; set; }
+        private static List<string> _connectedClients { get; set; } = new List<string>();
 
-        public ClientAuthenticationResult ClientLogin(ClientAuthenticationRequest request)
+        public static ClientAuthenticationResult ClientLogin(ClientAuthenticationRequest request)
         {
             var result = new ClientAuthenticationResult();
 
@@ -31,11 +31,20 @@ namespace TeamServer.Controllers
                 result.Result = ClientAuthenticationResult.AuthResult.LoginSuccess;
                 result.Token = AuthenticationController.GenerateAuthenticationToken(request.Nick);
 
+                AddNewClient(request.Nick);
 
             }
             return result;
         }
 
-     
+        public static List<string> GetConnectedClient()
+        {
+            return _connectedClients;
+        }
+
+        private static void AddNewClient(string nick)
+        {
+            _connectedClients.Add(nick);
+        }
     }
 }

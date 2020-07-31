@@ -13,8 +13,8 @@ namespace TeamServer.Controllers
     public class AuthenticationController
     {
 
-        private static byte[] _serverPassword { get; set; }
-        public static byte[] JWTSecret { get; private set; } = Encoding.UTF8.GetBytes("lasjdflkasjfdklajsdfklajsdfk");
+        private static byte[] _serverPassword { get; set; } = HashPassword("a");
+        public static byte[] JWTSecret { get; private set; } = Helpers.GeneratePseudoRandomBytes(120); // 120 character password
 
         public static void SetPassword(string plaintext)
         {
